@@ -4,7 +4,7 @@ A simple counter app to practice TypeScript.
 
 ## How to use
 
-- First, clone the repository.
+- First, clone the repository:
 
 ```bash
 git clone https://github.com/NachoHotz/typescript-react-counter.git
