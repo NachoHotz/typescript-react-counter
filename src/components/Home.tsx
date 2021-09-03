@@ -10,9 +10,11 @@ export default function Home() {
   return (
     <div className={style.container}>
       <h3>{counter}</h3>
-      <button onClick={() => dispatch(increment())}>Increment</button>
-      <button onClick={() => dispatch(decrement())}>Decrement</button>
-      <button onClick={() => dispatch(reset())}>Reset</button>
+      <div className={style.btn_container}>
+        <button onClick={() => dispatch(increment())}>Increment</button>
+        <button onClick={() => dispatch(decrement())}>Decrement</button>
+        <button onClick={() => dispatch(reset())}>Reset</button>
+      </div>
     </div>
   );
 }
