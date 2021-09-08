@@ -8,8 +8,8 @@ export default function Home() {
 
   return (
     <div className={style.container}>
-      <h1 className={style.counter}>{counter}</h1>
-      <div className={style.btn_container}>
+      <p className={style.counter}>{counter}</p>
+      <div>
         <button onClick={() => dispatch(increment())}>Increment</button>
         <button onClick={() => dispatch(decrement())}>Decrement</button>
         <button onClick={() => dispatch(reset())}>Reset</button>
