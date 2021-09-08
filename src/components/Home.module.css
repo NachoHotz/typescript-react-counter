@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #000;
 }
 
 .container {
@@ -11,23 +11,23 @@ body {
 }
 
 .counter {
-  color: white;
+  color: #fff;
   font-size: 3rem;
   margin-left: 15px;
 }
 
 button {
-  background-color: black;
-  border: 0px solid black;
-  color: white;
+  background-color: #000;
+  border: 0px solid #000;
+  color: #fff;
   padding: 10px;
   font-size: 2rem;
   font-weight: 400;
 }
 
 button:hover {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.40s;
