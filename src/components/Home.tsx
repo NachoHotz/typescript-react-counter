@@ -1,10 +1,16 @@
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
-import { increment, decrement, reset } from '../redux/actions/types';
+import { bindActionCreators } from 'redux';
+import * as actionCreators from '../redux/actions/types';
 import style from './Home.module.css';
 
 export default function Home() {
   const dispatch = useDispatch();
   const counter: number = useSelector((state: RootStateOrAny) => state.counter);
+
+  const { increment, decrement, reset } = bindActionCreators(
+    actionCreators,
+    dispatch,
+  );
 
   return (
     <div className={style.container}>
