@@ -1,13 +1,19 @@
 import { Action } from './interface';
 import { ActionType } from '../actions/names';
 
-const initialState = 0;
+interface InitialState {
+  counter: number,
+}
+
+const initialState: InitialState = {
+  counter: 0,
+}
 
 const rootReducer = (state = initialState, action: Action) => {
   switch(action.type) {
-    case ActionType.INCREMNET : return state + 1;
-    case ActionType.DECREMENT: return state - 1;
-    case ActionType.RESET: return state = 0;
+    case ActionType.INCREMNET : return { ...state, counter: state.counter + 1 };
+    case ActionType.DECREMENT: return { ...state, counter: state.counter - 1 } ;
+    case ActionType.RESET: return { ...state, counter: state.counter = 0 };
     default: return state;
   }
 }
