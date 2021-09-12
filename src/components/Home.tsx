@@ -1,10 +1,11 @@
-import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import * as actions from '../redux/actions/types';
+import { State } from '../redux/store';
 import style from './Home.module.css';
 
 export default function Home() {
   const dispatch = useDispatch();
-  const counter: number = useSelector((state: RootStateOrAny) => state.counter);
+  const counter = useSelector((state: State) => state.root.counter);
 
   return (
     <div className={style.container}>
