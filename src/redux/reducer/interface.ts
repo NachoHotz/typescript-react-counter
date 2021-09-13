@@ -1,18 +1,7 @@
 import { ActionType } from '../actions/names';
 
-interface IncrementAction {
-  type: ActionType.INCREMNET,
-  payload: number,
-}
-
-interface DecrementAction {
-  type: ActionType.DECREMENT,
-  payload: number,
-}
-
-interface ResetAction {
-  type: ActionType.RESET,
-  payload: number,
-}
+interface IncrementAction { type: ActionType.INCREMNET }
+interface DecrementAction { type: ActionType.DECREMENT }
+interface ResetAction { type: ActionType.RESET }
 
 export type Action = IncrementAction | DecrementAction | ResetAction
