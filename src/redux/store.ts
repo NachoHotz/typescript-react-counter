@@ -3,14 +3,10 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducer/index';
 
-const reducer = combineReducers({
-  root: rootReducer,
-});
-
 const store = createStore(
-  reducer,
+  rootReducer,
   composeWithDevTools(applyMiddleware(thunk)),
 );
 
-export type State = ReturnType<typeof reducer>
+export type State = ReturnType<typeof rootReducer>
 export default store;

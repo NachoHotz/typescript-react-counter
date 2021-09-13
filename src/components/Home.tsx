@@ -5,7 +5,7 @@ import style from './Home.module.css';
 
 export default function Home() {
   const dispatch = useDispatch();
-  const counter = useSelector((state: State) => state.root.counter);
+  const counter = useSelector((state: State) => state.counter);
 
   return (
     <div className={style.container}>
