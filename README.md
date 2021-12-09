@@ -10,6 +10,8 @@ A simple counter app to practice TypeScript.
 git clone https://github.com/NachoHotz/typescript-react-counter.git
 ```
 
-- Then, head into the local repo and execute `npm install` to install dependencies.
+- Then, head into the local repo and execute `npm install` to install all the dependencies.
+
 - Lastly, execute the `npm start` command to launch the app.
 
+## Screenshot
