@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import * as actions from '../redux/actions/types';
 import { State } from '../redux/store';
+import * as actions from '../redux/actions/types';
 import style from './Home.module.css';
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
       <p className={style.counter}>{counter}</p>
       <div>
         <button onClick={() => dispatch(actions.increment())}>Increment</button>
-        <button onClick={() => dispatch(actions.decrement())}>Decrement</button>
         <button onClick={() => dispatch(actions.reset())}>Reset</button>
+        <button onClick={() => dispatch(actions.decrement())}>Decrement</button>
       </div>
     </div>
   );
