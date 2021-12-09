@@ -15,3 +15,5 @@ git clone https://github.com/NachoHotz/typescript-react-counter.git
 - Lastly, execute the `npm start` command to launch the app.
 
 ## Screenshot
+
+![counter](https://user-images.githubusercontent.com/72778896/145427044-23a55cf6-90a3-475d-a1ce-3f6be68033dc.jpg)
